@@ -7,7 +7,7 @@ export default function Home() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setResponse("Nothing to look here");
+    setResponse("Nuh uh, not gonna happen");
   };
 
   return (

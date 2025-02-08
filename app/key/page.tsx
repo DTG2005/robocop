@@ -7,9 +7,8 @@ export default function Home() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setResponse("Nothing to look here");
+    setResponse("Caught you spooping around, huh?");
   };
-
   return (
     <div
       style={{
@@ -19,14 +18,7 @@ export default function Home() {
         height: "100vh",
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <>
         <form
           onSubmit={handleSubmit}
           style={{
@@ -74,7 +66,7 @@ export default function Home() {
             {response}
           </p>
         )}
-      </div>
+      </>
     </div>
   );
 }
