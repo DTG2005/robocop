@@ -7,7 +7,11 @@ export default function Home() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setResponse("bbctf{y0u_d3str0y3d_th3_r0b0t}");
+    if (message === "flag" || message.includes("flag")) {
+      setResponse("bbctf{y0u_d3str0y3d_th3_r0b0t}");
+    } else {
+      setResponse("I don't get what you seek");
+    }
   };
 
   return (
